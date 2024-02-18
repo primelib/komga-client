@@ -1,0 +1,38 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/primelib/primelib-app/refs/heads/main/configschema/v1.json
+name: Komga Client
+output: sdk
+
+repository:
+  url: https://github.com/primelib/komga-client
+  licenseName: MIT
+  licenseUrl: https://github.com/primelib/komga-client/blob/main/LICENSE
+
+maintainers:
+  - id: PhilippHeuer
+    name: Philipp Heuer
+    email: git@philippheuer.me
+
+spec:
+  file: openapi.yaml
+  type: openapi3
+  sources:
+    - url: https://raw.githubusercontent.com/gotson/komga/refs/tags/v1.6.4/komga/docs/openapi.json
+      type: openapi3
+  patches:
+    - pruneInvalidPaths
+    - generateOperationIds
+    - flattenSchemas
+    - mergePolymorphicSchemas
+    - missingSchemaTitle
+  customization:
+    summary: Komga API
+    description: This is the API specification for the Komga API.
+    servers:
+      - url: 'http://127.0.0.1:25600'
+        description: 'Komga Server'
+
+presets:
+  java:
+    enabled: true
+  go:
+    enabled: true
