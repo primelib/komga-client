@@ -5,12 +5,12 @@ output: sdk
 repository:
   url: https://github.com/primelib/komga-client
   licenseName: MIT
-  licenseUrl: https://github.com/primelib/komga-client/blob/main/LICENSE
+  licenseURL: https://github.com/primelib/komga-client/blob/main/LICENSE
 
 maintainers:
   - id: PhilippHeuer
     name: Philipp Heuer
-    email: git@philippheuer.me
+    email: git@philippheuer.de
 
 spec:
   file: openapi.yaml

@@ -2078,7 +2078,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2SeriesV1"
+            operationId: "getOpdsV12SeriesV1"
             parameters:
                 - name: "search"
                   in: "query"
@@ -2116,7 +2116,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2SeriesByIdV1"
+            operationId: "getOpdsV12SeriesByIdV1"
             parameters:
                 - name: "id"
                   in: "path"
@@ -2147,7 +2147,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2SeriesLatestV1"
+            operationId: "getOpdsV12SeriesLatestV1"
             parameters:
                 - name: "page"
                   in: "query"
@@ -2173,7 +2173,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2SearchV1"
+            operationId: "getOpdsV12SearchV1"
             responses:
                 "400":
                     description: "Bad Request"
@@ -2193,7 +2193,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2ReadlistsV1"
+            operationId: "getOpdsV12ReadlistsV1"
             parameters:
                 - name: "page"
                   in: "query"
@@ -2219,7 +2219,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2ReadlistByIdV1"
+            operationId: "getOpdsV12ReadlistByIdV1"
             parameters:
                 - name: "id"
                   in: "path"
@@ -2250,7 +2250,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2PublishersV1"
+            operationId: "getOpdsV12PublishersV1"
             parameters:
                 - name: "page"
                   in: "query"
@@ -2276,7 +2276,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2OndeckV1"
+            operationId: "getOpdsV12OndeckV1"
             parameters:
                 - name: "page"
                   in: "query"
@@ -2302,7 +2302,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2LibrariesV1"
+            operationId: "getOpdsV12LibrariesV1"
             responses:
                 "400":
                     description: "Bad Request"
@@ -2322,7 +2322,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2LibraryByIdV1"
+            operationId: "getOpdsV12LibraryByIdV1"
             parameters:
                 - name: "id"
                   in: "path"
@@ -2353,7 +2353,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2KeepReadingV1"
+            operationId: "getOpdsV12KeepReadingV1"
             parameters:
                 - name: "page"
                   in: "query"
@@ -2379,7 +2379,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2CollectionsV1"
+            operationId: "getOpdsV12CollectionsV1"
             parameters:
                 - name: "page"
                   in: "query"
@@ -2405,7 +2405,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2CollectionByIdV1"
+            operationId: "getOpdsV12CollectionByIdV1"
             parameters:
                 - name: "id"
                   in: "path"
@@ -2436,7 +2436,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2CatalogV1"
+            operationId: "getOpdsV12CatalogV1"
             responses:
                 "400":
                     description: "Bad Request"
@@ -2456,7 +2456,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2BookByBookIdThumbnailSmallV1"
+            operationId: "getOpdsV12BookByBookIdThumbnailSmallV1"
             parameters:
                 - name: "bookId"
                   in: "path"
@@ -2480,7 +2480,7 @@ paths:
         get:
             tags:
                 - "opds-common-controller"
-            operationId: "getOpdsV1.2BookByBookIdThumbnailV1"
+            operationId: "getOpdsV12BookByBookIdThumbnailV1"
             parameters:
                 - name: "bookId"
                   in: "path"
@@ -2528,7 +2528,7 @@ paths:
         get:
             tags:
                 - "book-controller"
-            operationId: "getOpdsV1.2BookByBookIdPageByPageNumberV1"
+            operationId: "getOpdsV12BookByBookIdPageByPageNumberV1"
             parameters:
                 - name: "bookId"
                   in: "path"
@@ -2567,7 +2567,7 @@ paths:
         get:
             tags:
                 - "opds-controller"
-            operationId: "getOpdsV1.2BooksLatestV1"
+            operationId: "getOpdsV12BooksLatestV1"
             parameters:
                 - name: "page"
                   in: "query"
@@ -4832,7 +4832,7 @@ paths:
             tags:
                 - "book-controller"
             description: "Download the book file."
-            operationId: "getOpdsV1.2BookByBookIdFileV1"
+            operationId: "getOpdsV12BookByBookIdFileV1"
             parameters:
                 - name: "bookId"
                   in: "path"
